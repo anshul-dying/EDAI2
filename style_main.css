@@ -1,0 +1,102 @@
+body {
+    text-align: center; /* Ensure all child elements are centered */
+    position: relative; /* Needed for positioning the pseudo-element */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Ensure the overlay covers the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 157, 214, 0.321); /* Blue color with transparency */
+    z-index: -1; /* Ensure it sits below all content */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Ensure it sits above the pseudo-element */
+    z-index: 1; /* Ensure it sits above the pseudo-element */
+}
+
+.logo {
+    margin: 20px 0; /* Add some spacing above and below the logo */
+    height: 10%;
+    width: 10%;
+}
+
+.navbar {
+    width: 100%; /* Make sure the navbar takes the full width */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1; /* Ensure it sits above the pseudo-element */
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    color: #333; /* Set a dark color for the text */
+    border: 2px solid #00ff08; /* Add a green border */
+    background-color: transparent; /* Make the background transparent */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+}
+
+.project-text {
+    margin: 20px 0; /* Add spacing above and below the text */
+    font-size: 40px; /* Adjust the font size */
+    color: #ffffff; /* Text color */
+}
+
+.btn {
+    margin-top: 20px; /* Add some spacing above the button */
+    padding: 15px 30px; /* Make the button bigger */
+    background-color: #f43cd5; /* New color for the "OPEN MAP" button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: pulse 1.5s infinite; /* Add pulse animation */
+}
+
+.btn:hover {
+    background-color: #c32ca4; /* Slightly darker shade for hover effect */
+    transform: scale(1.1); /* Slightly larger scale on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

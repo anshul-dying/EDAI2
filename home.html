@@ -1,0 +1,38 @@
+<html>
+  <head>
+    
+    <title>Geolocation</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style_home.css" />
+    <script type="module" src="./index.js"></script>
+
+  </head>
+  <body>
+    <br>
+    <h1>A09 EDAI_2</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">MAP</a></li>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="information.html">Information</a></li>
+      </ul>
+    </nav>
+    <br>
+    <main>
+      <div id="map-container">
+        <div id="map"></div>
+        <button type="button" id="b1" onclick="document.location='https://www.google.com/maps/search/recycle+centre+near+me/@18.5339017,73.7135653,11z/data=!3m1!4b1?entry=ttu'">
+        Nearest Recycle Centre
+        </button>
+      </div>
+    </main>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAquHYg3ciIluNRi-IWngHQ_HKV_oWwno&callback=initMap&v=weekly"
+      defer
+    >
+    </script>
+  </body>
+</html>

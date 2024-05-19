@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group A9-EDAI-2</title>
+    <link rel="stylesheet" href="style_main.css">
+    <script>
+        function goTo(link){
+            location.href = link.value;
+        } 
+    </script>
+</head>
+<body background="Images/background.jpg">
+    <div class="container">
+        <img src="Images/logo_transparent.png" class="logo">
+        <nav class="navbar">
+            <ul>
+                <li><button class="nav-btn" onclick="location.href='main.html'">Home</button></li>
+                <li><button class="nav-btn" onclick="location.href='feedback.html'">Feedback</button></li>
+                <li><button class="nav-btn" onclick="location.href='contact.html'">Contact</button></li>
+                <li><button class="nav-btn" onclick="location.href='information.html'">Information</button></li>
+            </ul>
+        </nav>
+        <p class="project-text">This is our EDAI 2 project<br>Thanks for Visiting our site</p>
+        <button class="btn" onclick="goTo(this)" value="home.html">OPEN MAP</button>
+    </div>    
+</body>
+</html>
