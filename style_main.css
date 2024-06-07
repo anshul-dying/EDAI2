@@ -50,7 +50,7 @@ body::before {
 
 .nav-btn {
     padding: 10px 20px;
-    color: #333; /* Set a dark color for the text */
+    color: #ffffff; /* Set a dark color for the text */
     border: 2px solid #00ff08; /* Add a green border */
     background-color: transparent; /* Make the background transparent */
     cursor: pointer;
@@ -100,3 +100,66 @@ body::before {
         transform: scale(1);
     }
 }
+
+/* Paragraph text */
+p.info-text {
+    color: #ffffff; /* Example color for informational text */
+}
+
+/* List items */
+ul.info-list li {
+    color: #ffffff; /* Example color for list items */
+}
+
+/* Navbar button text */
+.nav-btn {
+    color: #ffffff; /* Example color for navbar buttons */
+}
+
+/* Button text */
+.btn {
+    color: #ffffff; /* Example color for button text */
+}
+
+/* style_main.css */
+
+/* Base font size for the body */
+body {
+    font-size: 17px; /* Increased by 1pt /* Example color for general text */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.25em; /* Assuming previous size was around 2.1em, increase by 1pt */
+    background-color: rgb(149, 226, 240);
+}
+
+h2 {
+    font-size: 1.75em; /* Assuming previous size was around 1.6em, increase by 1pt */
+    background-color: rgb(149, 226, 240);
+}
+
+/* Paragraph text */
+p.info-text {
+    font-size: 1em; /* Increase base size */
+     /* Example color for informational text */
+}
+
+/* List items */
+ul.info-list li {
+    font-size: 1em;
+    background-color: rgba(177, 177, 177, 0.567);
+}
+
+/* Navbar button text */
+.nav-btn {
+    font-size: 1em; /* Increase base size */
+     /* Example color for navbar buttons */
+}
+
+/* Button text */
+.btn {
+    font-size: 1em; /* Increase base size */
+     /* Example color for button text */
+}
+
